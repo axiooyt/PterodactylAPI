@@ -12,7 +12,6 @@ const PTERO_URL = config.pterodactyl.panelurl;
 const API_KEY = config.pterodactyl.apikey;
   
 
-// Endpoint to fetch users data
 app.get('/users', async (req, res) => {
     try {
         const response = await axios.get(`${PTERO_URL}/api/application/users`, {
@@ -40,7 +39,6 @@ app.get('/users', async (req, res) => {
     }
 });
 
-// Endpoint to fetch servers data
 app.get('/servers', async (req, res) => {
     try {
         const response = await axios.get(`${PTERO_URL}/api/application/servers`, {
@@ -72,7 +70,6 @@ app.get('/servers', async (req, res) => {
     }
 });
 
-// Endpoint to fetch nodes data
 app.get('/nodes', async (req, res) => {
     try {
         const response = await axios.get(`${PTERO_URL}/api/application/nodes`, {
@@ -100,7 +97,6 @@ app.get('/nodes', async (req, res) => {
     }
 });
 
-// Endpoint to fetch locations data
 app.get('/locations', async (req, res) => {
     try {
         const response = await axios.get(`${PTERO_URL}/api/application/locations`, {
@@ -128,7 +124,6 @@ app.get('/locations', async (req, res) => {
     }
 });
 
-// Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
