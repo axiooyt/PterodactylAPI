@@ -1,0 +1,6 @@
+pterodactyl:
+  apiurl: "http://localhost"
+  apiport: 3000
+  panelurl: "your.panel.url" # without http:// ot https://
+  apikey: 'ptla_pteroapikey'
+
